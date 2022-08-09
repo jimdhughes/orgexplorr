@@ -1,0 +1,191 @@
+[
+  {
+    "id": 6,
+    "fullName": "Stuart Lee",
+    "title": "CEO",
+    "phone": "1111111",
+    "cell": "",
+    "address": "",
+    "managerId": null
+  },
+  {
+    "id": 7,
+    "fullName": "Jennifer Addison",
+    "title": "Corporate Secretary and SVP",
+    "phone": "1111112",
+    "cell": "",
+    "address": "",
+    "managerId": 6
+  },
+  {
+    "id": 8,
+    "fullName": "David Opalinsky",
+    "title": "Director Application Services",
+    "phone": "1111113",
+    "cell": "",
+    "address": "",
+    "managerId": 7
+  },
+  {
+    "id": 17,
+    "fullName": "Jonathan Harkness",
+    "title": "Sr Manager Business Applications",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 18,
+    "fullName": "Jayson Aguilar",
+    "title": "Sr Manager Business Applications",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 18,
+    "fullName": "Jing Wu",
+    "title": "Sr Manager Architecture",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 19,
+    "fullName": "Reza Khalili",
+    "title": "Sr Manager Project Delivery",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 20,
+    "fullName": "Terry (Terrance) Kroetch",
+    "title": "Sr Manager Project Delivery",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 1,
+    "fullName": "Matthew Yee",
+    "title": "Sr Manager Cloud, Mobile, and Web",
+    "phone": "1111114",
+    "cell": "",
+    "address": "",
+    "managerId": 8
+  },
+  {
+    "id": 2,
+    "fullName": "James Hughes",
+    "title": "Manager Web and Mobile",
+    "phone": "1111115",
+    "cell": "",
+    "address": "",
+    "managerId": 1
+  },
+  {
+    "id": 3,
+    "fullName": "Raghuveer Shikaripur",
+    "title": "Supervisor, Database Administration",
+    "phone": "1111116",
+    "cell": "",
+    "address": "",
+    "managerId": 1
+  },
+  {
+    "id": 4,
+    "fullName": "Jay Zhou",
+    "title": "Sr Analyst Web",
+    "phone": "1111117",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 5,
+    "fullName": "Dustin Swick",
+    "title": "Systems Analyst",
+    "phone": "1111118",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 9,
+    "fullName": "Andrea Samuelson",
+    "title": "Systems Analyst",
+    "phone": "1111119",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 10,
+    "fullName": "Raheel Bhojani",
+    "title": "Systems Analyst",
+    "phone": "1111120",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 11,
+    "fullName": "Karen Pentland",
+    "title": "Systems Analyst",
+    "phone": "1111121",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 12,
+    "fullName": "Slaven Nikolic",
+    "title": "Systems Analyst",
+    "phone": "1111122",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 13,
+    "fullName": "John Kupilik",
+    "title": "Systems Analyst",
+    "phone": "1111123",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 14,
+    "fullName": "Cliff Weissk",
+    "title": "Systems Analyst",
+    "phone": "1111124",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 15,
+    "fullName": "Hector Miranda",
+    "title": "Systems Analyst",
+    "phone": "1111125",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  },
+  {
+    "id": 16,
+    "fullName": "Mark McFadyen",
+    "title": "Systems Analyst",
+    "phone": "1111126",
+    "cell": "",
+    "address": "",
+    "managerId": 2
+  }
+]

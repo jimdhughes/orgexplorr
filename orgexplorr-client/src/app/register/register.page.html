@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Full Name</ion-label>
+      <ion-input type="text" formControlName="fullName"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.controls.fullName.dirty && registrationForm.controls.fullName.hasError('required')"
+    >
+      <p>We need to know your name!</p>
+    </div>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.controls.email.dirty && registrationForm.controls.email.hasError('required')"
+    >
+      <p>We need to know your email!</p>
+    </div>
+    <div *ngIf="registrationForm.controls.email.hasError('email')">
+      <p>hmm. This doesn't look right</p>
+    </div>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Confirm Password</ion-label>
+      <ion-input type="password" formControlName="confirmPassword"></ion-input>
+    </ion-item>
+    <div
+      *ngIf="registrationForm.controls.password.dirty && registrationForm.controls.confirmPassword.dirty && registrationForm.hasError('confirmPasswords')"
+    >
+      <p>Passwords do not match</p>
+    </div>
+    <ion-button expand="block" type="submit" [disabled]="checkErrors()"
+      >Register</ion-button
+    >
+  </form>
+</ion-content>

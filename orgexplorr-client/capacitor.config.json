@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "orgexplorr",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

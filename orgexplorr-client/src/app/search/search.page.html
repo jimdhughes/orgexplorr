@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title *ngIf="!toggled">Org Explorr</ion-title>
+    <ion-searchbar
+      *ngIf="toggled"
+      showCancelButton="always"
+      debounce="500"
+      [(ngModel)]="searchTerm"
+      (ionCancel)="onToggle()"
+      (ionChange)="doSearch()"
+      animated="true"
+    ></ion-searchbar>
+    <ion-buttons slot="end" *ngIf="!toggled">
+      <ion-button shape="round" (click)="onToggle()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="!hasSearchResults()">
+    <ion-card-header>
+      <ion-card-subtitle
+        >Making your organization exploration fun</ion-card-subtitle
+      >
+      <ion-card-title>Welcome to Org Explorr!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        To get started, press the search button in the top-right hand corner of
+        your screen
+      </p>
+      <p>
+        It's a plain old search. Look for people by name, title, or email
+        address and we'll do our best do match you to the right people!
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list *ngIf="hasSearchResults()">
+    <app-person-list-item *ngFor="let s of searchResults" [person]="s">
+    </app-person-list-item>
+  </ion-list>
+</ion-content>

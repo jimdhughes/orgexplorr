@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Hierarchy </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Hierarchy</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <ion-list *ngIf="hasManagementChain()">
+        <app-person-list-item
+          *ngFor="let c of chain"
+          [person]="c"
+        ></app-person-list-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

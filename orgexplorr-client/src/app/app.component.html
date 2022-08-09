@@ -1,0 +1,35 @@
+<ion-app>
+  <ion-split-pane contentId="main">
+    <!--  the side menu  -->
+    <ion-menu contentId="main">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Org Explorr</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <span *ngIf="isAuthenticated">
+            <ion-item [routerLink]="['/']" routerDirection="root">
+              <ion-label>Home</ion-label>
+            </ion-item>
+            <ion-item (click)="onLogout()" routerDirection="root">
+              <ion-label>Logout</ion-label>
+            </ion-item>
+          </span>
+          <span *ngIf="!isAuthenticated">
+            <ion-item [routerLink]="['login']" routerDirection="root">
+              <ion-label>Login</ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['register']" routerDirection="root">
+              <ion-label>Register</ion-label>
+            </ion-item>
+          </span>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <!-- the main content -->
+    <ion-router-outlet id="main"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

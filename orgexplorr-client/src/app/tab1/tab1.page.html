@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-person-card *ngIf="person" [person]="person"></app-person-card>
+  <ion-card *ngIf="hasReports()">
+    <ion-card-content>
+      <ion-list>
+        <ion-list-header>Direct Reports</ion-list-header>
+        <app-person-list-item
+          *ngFor="let r of reports"
+          [person]="r"
+        ></app-person-list-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
